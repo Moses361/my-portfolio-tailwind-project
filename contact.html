@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Moses Odhiambo</title>
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS with Dark Mode Config -->
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {}
+        }
+      }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <style>
+      body {
+        font-family: "Nunito", sans-serif;
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-100">
+    <!-- ✅ Navbar -->
+    <nav class="w-full bg-indigo-700 shadow-lg fixed top-0 left-0 z-50">
+      <div
+        class="container mx-auto py-5 flex justify-between items-center px-4 text-white"
+      >
+        <!-- Logo -->
+        <a
+          href="index.html"
+          class="flex items-center gap-2 hover:opacity-80 transition"
+        >
+          <span class="text-2xl font-bold">Portfolio</span>
+        </a>
+
+        <!-- Menu -->
+        <ul
+          id="menu"
+          class="hidden md:flex flex-col md:flex-row absolute md:static top-16 left-0 bg-indigo-700 md:bg-transparent w-full md:w-auto text-center md:text-left md:space-x-10 font-medium space-y-4 md:space-y-0 py-4 md:py-0 transition-all duration-300 ease-in-out"
+        >
+          <li
+            class="hLink hover:text-indigo-200 transition-colors duration-200"
+          >
+            <a href="index.html#homepage">Homepage</a>
+          </li>
+
+          <li
+            class="hLink hover:text-indigo-200 transition-colors duration-200"
+          >
+            <a href="about-us.html">About</a>
+          </li>
+
+          <li
+            class="hLink hover:text-indigo-200 transition-colors duration-200"
+          >
+            <a href="index.html#services">Services</a>
+          </li>
+
+          <li
+            class="hLink hover:text-indigo-200 transition-colors duration-200"
+          >
+            <a href="works.html">Works</a>
+          </li>
+
+          <li
+            class="hLink hover:text-indigo-200 transition-colors duration-200"
+          >
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+
+        <!-- Dark Mode Toggle -->
+        <button id="moon" class="hidden md:block text-white text-xl">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+
+        <!-- Hamburger Icon -->
+        <div id="hamburger" class="space-y-1 cursor-pointer md:hidden">
+          <div class="w-6 h-0.5 bg-white"></div>
+          <div class="w-6 h-0.5 bg-white"></div>
+          <div class="w-6 h-0.5 bg-white"></div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ✅ Contact Section -->
+    <section id="contact" class="py-24 px-10 mt-24">
+      <div class="container mx-auto">
+        <!-- Top -->
+        <div class="flex flex-col gap-3 items-center mb-16">
+          <h1 class="text-indigo-600 font-bold uppercase tracking-wide">CONTACT</h1>
+          <h2 class="text-4xl font-extrabold text-gray-900 dark:text-white">Have a Question?</h2>
+          <p class="w-full md:w-1/2 text-center text-gray-600 dark:text-gray-300">
+            Do you have an idea? Let's discuss it and see what we can do together.
+          </p>
+        </div>
+
+        <!-- Contact Content -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <!-- Contact Form -->
+          <div class="bg-white dark:bg-slate-800 rounded-lg shadow-md p-8">
+            <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Send a Message</h3>
+            <form class="space-y-4">
+              <input
+                class="w-full p-3 ring-1 ring-indigo-300 rounded-md dark:bg-slate-700 dark:ring-0 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-600"
+                type="text"
+                placeholder="Your Name"
+              />
+              <input
+                class="w-full p-3 ring-1 ring-indigo-300 rounded-md dark:bg-slate-700 dark:ring-0 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-600"
+                type="email"
+                placeholder="Your Email"
+              />
+              <textarea
+                class="w-full p-3 ring-1 ring-indigo-300 rounded-md dark:bg-slate-700 dark:ring-0 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-600"
+                cols="30"
+                rows="6"
+                placeholder="Your Message..."
+              ></textarea>
+              <button
+                type="submit"
+                class="w-full bg-indigo-600 text-white font-semibold px-4 py-3 rounded-md hover:bg-indigo-700 transition"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="flex flex-col gap-8">
+            <!-- Email -->
+            <div class="bg-white dark:bg-slate-800 rounded-lg shadow-md p-8">
+              <div class="flex items-center gap-4">
+                <div class="bg-indigo-100 dark:bg-indigo-900 p-4 rounded-lg">
+                  <i class="fas fa-envelope text-indigo-600 text-2xl"></i>
+                </div>
+                <div>
+                  <h4 class="text-xl font-semibold text-gray-900 dark:text-white">Email</h4>
+                  <p class="text-gray-600 dark:text-gray-300">your.email@example.com</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Phone -->
+            <div class="bg-white dark:bg-slate-800 rounded-lg shadow-md p-8">
+              <div class="flex items-center gap-4">
+                <div class="bg-indigo-100 dark:bg-indigo-900 p-4 rounded-lg">
+                  <i class="fas fa-phone text-indigo-600 text-2xl"></i>
+                </div>
+                <div>
+                  <h4 class="text-xl font-semibold text-gray-900 dark:text-white">Phone</h4>
+                  <p class="text-gray-600 dark:text-gray-300">+254 7XX XXX XXX</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Location -->
+            <div class="bg-white dark:bg-slate-800 rounded-lg shadow-md p-8">
+              <div class="flex items-center gap-4">
+                <div class="bg-indigo-100 dark:bg-indigo-900 p-4 rounded-lg">
+                  <i class="fas fa-map-marker-alt text-indigo-600 text-2xl"></i>
+                </div>
+                <div>
+                  <h4 class="text-xl font-semibold text-gray-900 dark:text-white">Location</h4>
+                  <p class="text-gray-600 dark:text-gray-300">Nairobi, Kenya</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="bg-white dark:bg-slate-800 rounded-lg shadow-md p-8">
+              <h4 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">Follow Me</h4>
+              <div class="flex justify-start gap-6 text-indigo-600 text-2xl">
+                <a href="https://github.com/Moses361" target="_blank" class="hover:text-indigo-800 transition">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/moses361/" target="_blank" class="hover:text-indigo-800 transition">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://twitter.com/" target="_blank" class="hover:text-indigo-800 transition">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://instagram.com/" target="_blank" class="hover:text-indigo-800 transition">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ✅ Footer -->
+    <footer class="bg-indigo-700 text-white py-6 text-center mt-20">
+      <p>&copy; 2025 Moses Odhiambo. All rights reserved.</p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
